@@ -128,12 +128,50 @@ p {
     text-align: right;
 }
 
+.centro {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro p {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 .prints {
     width: 350px;
     height: 400px;
     border-radius: 10px;
 }
 
+.lado-lado {
+    width: 1600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafo-esquerda, .paragrafo-direita {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.paragrafo-esquerda {
+    margin-right: 100px;
+}
+
+.paragrafo-direita {
+    padding-left: 100px;
+    border-left: 3px solid black;
+}
 
 .footer p{
     text-align: center;
