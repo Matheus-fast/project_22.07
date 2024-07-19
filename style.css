@@ -28,7 +28,7 @@ p {
     font-style: normal;
 }
 
-.parte2 {
+.layout {
     width: auto;
     height: 1000px;
     display: flex;
@@ -36,6 +36,27 @@ p {
     align-items: center;
     font-size: 25px;
 }
+
+.carrossel {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel img{
+    width: 200px;
+    height: 400px;
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}  
 
 .alinhar { 
     width: 1000px;
@@ -53,14 +74,6 @@ p {
     text-align: center;
 }
 
-.carrossel {
-    width: 800px;
-    height: 500px;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .broken{
     width: 1000px;
@@ -112,6 +125,7 @@ p {
     width: 1500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -136,10 +150,11 @@ p {
     align-items: center;
 }
 
-.centro p {
+.box p {
     border: 3px solid black;
     padding: 20px;
     border-radius: 20px;
+    background-color: #CDCCA8;
 }
 
 .prints {
@@ -168,9 +183,81 @@ p {
     margin-right: 100px;
 }
 
-.paragrafo-direita {
+.linha {
     padding-left: 100px;
     border-left: 3px solid black;
+}
+
+.box-Vergani {
+    width: 700px;
+    height: 150px;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #CDCCA8;
+    border-radius: 20px;
+}
+
+.box-cartinha {
+    width: 700px;
+    height: 850px;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #CDCCA8;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+.box-cartinha:hover {
+    width: 1300px;
+    height: 600px;
+    transition: 1s;
+}
+
+.espaco-linhas {
+    margin-bottom: 50px;
+}
+
+.engracada {
+    width: 100%;
+    height: 1200px;
+}
+
+.print-lado-lado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.print-lado-lado p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.tudo-mudou {
+    width: 400px;
+    height: 600px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.tudo-mudou:hover {
+    width: 600px;
+    height: 900px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.filho1 {
+    margin-left: 400px;
+}
+
+.filho {
+    margin-right: 400px;
 }
 
 .footer p{
